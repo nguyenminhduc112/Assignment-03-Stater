@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+            Main Color: #0000FF
+            Sub Color: #354F52
+        */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ============= Project ================== */
+#project-charter {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #0000FF;
+    display: grid;
+    grid-template-columns: 550px 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.project-item {
+    padding: 0 15px;
+    background-color: #F0F8FF;
+}
+
+.project-title {
+    color: #2709FF;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Goal, team, timline */
+#timeline {
+    grid-column: 3/4;
+    grid-row: -1/ span 2;
+}
+
+.project-item ul {
+    list-style-type: none;
+}
+
+.project-item ul li {
+    padding: 8px 0px;
+    display: flex;
+    gap: 10px;
+    color: #354F52;
+}
+
+.project-item ul.goal li,
+.project-item ul.timeline li {
+    padding: 8px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 10px;
+    color: #354F52;
+}
+
+.project-item ul.team li b,
+.project-item ul.timeline li b,
+.project-item ul.team li i {
+    color: #393838;
+}
+
+.project-item ul.team li,
+.project-item ul.timeline li {
+    margin-bottom: 10px;
+}
+
+.project-item ul li i,
+#timeline .timeline-round {
+    flex-basis: 15%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+#timeline .timeline-round {
+    background-color: #9E88FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0px 10px;
+    color: #ffff;
+    border: 2px solid #354F52;
+}
+
+
+.project-item ul li i+div {
+    flex-basis: 85%;
+}
+
+/* Scopes */
+#scopes .project-info {
+    display: flex;
+    gap: 30px;
+    color: #354F52;
+}
+
+#scopes .project-info h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#scopes .project-info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
