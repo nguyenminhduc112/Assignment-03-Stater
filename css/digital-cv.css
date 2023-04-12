@@ -117,3 +117,14 @@ body {
     margin-bottom: 15px;
     line-height: 1.5;
 }
+
+@media (max-width:768px) {
+    #project-charter {
+        width: 100%;
+        grid-template-columns: 1fr !important;
+    }
+
+    #timeline {
+        grid-column: 1/1;
+    }
+}
